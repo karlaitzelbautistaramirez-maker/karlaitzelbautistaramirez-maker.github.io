@@ -24,7 +24,7 @@ lógica de comercio electrónico.
         │  HTML + CSS + app.js ── carrito, inventario, checkout, mesa de ayuda │
         │        │                   │                     │                   │
         │        ▼                   ▼                     ▼                   │
-        │  Google Analytics 4   Formspree (correo)    WhatsApp / Meet / Zoom   │
+        │  Google Analytics 4   Formspree (correo)    WhatsApp / Google Meet   │
         └──────────────────────────────────────────────────────────────────────┘
         Monitoreo programado (GitHub Actions cada 6 h) ──> monitoring/metrics.csv ──> /estado/
 ```

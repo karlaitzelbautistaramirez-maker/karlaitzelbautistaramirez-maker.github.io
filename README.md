@@ -50,7 +50,7 @@ design/          maqueta original
 | 1.4 Campaña SEM simulada | [`docs/02-seo-y-campana-sem.md`](docs/02-seo-y-campana-sem.md) |
 | 2.1 Plataforma, blog, share, tienda, pagos, categorías, inventario | `/blog/`, botones para compartir, `/menu/`, `/carrito/`, `/pagar/`, `data/products.json` |
 | 2.2 Google Analytics y Search Console | `data/site.json > analytics`; eventos de e-commerce GA4 en `app.js` |
-| 2.3 Webconferencias y redes sociales | `/nosotros/#videollamada` (Meet, Zoom, agenda), redes en el pie de página |
+| 2.3 Webconferencias y redes sociales | `/nosotros/#videollamada` (Google Meet y agenda de citas), redes en el pie de página |
 | 3.1 Repositorio y ramas | Git Flow: `main`, `develop`, `feature/*`, `hotfix/*` |
 | 3.2 Pipeline CI/CD | `.github/workflows/ci.yml` y `deploy.yml` |
 | 3.3 Monitoreo y métricas | `monitor.yml`, `scripts/monitor.py`, página `/estado/`, Web Vitals a GA4 |

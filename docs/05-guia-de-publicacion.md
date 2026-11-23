@@ -10,7 +10,7 @@ En `data/site.json` cambia todos los valores que dicen `TODO`:
 
 - [ ] `phone`, `whatsapp` (formato `52` + 10 dígitos, sin espacios) y `email`
 - [ ] `social`: URLs reales de Facebook, Instagram, TikTok y YouTube
-- [ ] `webconference`: enlace fijo de Google Meet, de Zoom y de la agenda (Google Calendar → *Agenda de citas*)
+- [ ] `webconference`: enlace fijo de Google Meet y de la agenda (Google Calendar → *Agenda de citas*)
 - [ ] Opcional: `video.youtube_id` cuando subas el video del proceso de preparación
 
 > Las fotos actuales se recortaron de la maqueta. Si tienes fotos reales, colócalas en `assets-src/` con el
