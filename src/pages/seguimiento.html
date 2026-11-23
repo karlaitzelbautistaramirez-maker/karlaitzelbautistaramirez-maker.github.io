@@ -1,0 +1,22 @@
+---
+path: /seguimiento/
+title: Seguimiento de pedido y tickets de soporte
+description: Consulta el estado de tu pedido o de tu ticket de soporte en Eke con tu número de folio.
+crumb: Seguimiento
+priority: 0.4
+---
+<section class="section container narrow">
+  <header class="section-head">
+    <h1 class="section-title">Seguimiento de pedido</h1>
+    <p class="section-sub">Escribe tu número de pedido (EKE-…) o de ticket de soporte (TCK-…).</p>
+  </header>
+  <form class="card track-form" data-track-form>
+    <label for="folio">Número de folio</label>
+    <div class="inline-field">
+      <input id="folio" name="folio" required placeholder="EKE-20261120-1234 o TCK-1234" autocomplete="off">
+      <button class="btn btn-wine" type="submit">{{icon:search}} Consultar</button>
+    </div>
+  </form>
+  <div id="track-root" aria-live="polite"></div>
+  <div id="history-root"></div>
+</section>

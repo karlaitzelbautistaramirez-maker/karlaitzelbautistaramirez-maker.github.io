@@ -1,0 +1,29 @@
+name: Solicitud de cambio / mejora (ITIL)
+description: Proponer un cambio o mejora a la plataforma (nuevo producto, ajuste de SEO, nueva función).
+title: "[RFC] "
+labels: ["cambio", "mejora-continua"]
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de cambio
+      options: ["Estándar (bajo riesgo, preaprobado)", "Normal (requiere revisión)", "Emergencia (corrige un incidente P1)"]
+    validations:
+      required: true
+  - type: textarea
+    id: motivo
+    attributes:
+      label: Justificación de negocio
+      description: ¿Qué dato de Analytics, Search Console, monitoreo o mesa de ayuda motiva el cambio?
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Cambio propuesto y criterio de aceptación
+    validations:
+      required: true
+  - type: textarea
+    id: riesgo
+    attributes:
+      label: Riesgo y plan de vuelta atrás (rollback)

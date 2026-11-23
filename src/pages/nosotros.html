@@ -1,0 +1,64 @@
+---
+path: /nosotros/
+title: Nosotros: cocina tradicional huasteca en Huejutla
+description: Somos Eke, cocina tradicional huasteca de Huejutla, Hidalgo. Contáctanos por WhatsApp, correo, redes sociales o agenda una videollamada para pedidos de eventos.
+crumb: Nosotros
+schema: about
+priority: 0.6
+---
+<section class="section container">
+  <header class="section-head">
+    <h1 class="section-title">Nosotros</h1>
+    <p class="section-sub">Cocina tradicional huasteca, hecha en casa en Huejutla, Hidalgo.</p>
+  </header>
+
+  <div class="split">
+    <div class="prose">
+      <h2>Quiénes somos</h2>
+      <p>Eke nace en Huejutla de Reyes con un objetivo sencillo: compartir el sabor de las enchiladas de Huejutla con todo México. Somos un negocio familiar que combina la receta tradicional con herramientas digitales para recibir pedidos, cobrar en línea y dar seguimiento a cada cliente.</p>
+      <h3>Misión</h3>
+      <p>Llevar a cada mesa la comida tradicional de la Huasteca Hidalguense con calidad, higiene y atención cercana.</p>
+      <h3>Visión</h3>
+      <p>Ser la marca de referencia de comida huasteca en línea, reconocida por su autenticidad y su servicio.</p>
+    </div>
+    <div class="card info-card">
+      <h2 class="h3">Contacto</h2>
+      <ul class="contact-list">
+        <li>{{icon:pin}} {{site.address.city}}, {{site.address.region}}, C.P. {{site.address.postal_code}}</li>
+        <li>{{icon:phone}} {{site.phone}}</li>
+        <li>{{icon:mail}} {{site.email}}</li>
+        <li>{{icon:clock}} Lunes a domingo, 8:00 a 16:00 h</li>
+      </ul>
+      <p><a class="btn btn-whatsapp" href="https://wa.me/{{site.whatsapp}}" target="_blank" rel="noopener" data-track="whatsapp_click">{{icon:whatsapp}} Escríbenos por WhatsApp</a></p>
+      <h2 class="h3">Síguenos</h2>
+      {{block:social_links}}
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="videollamada" aria-labelledby="vc-title">
+  <div class="card vc-card">
+    <div>
+      <p class="eyebrow">Webconferencias</p>
+      <h2 class="section-title left" id="vc-title">Atención por videollamada</h2>
+      <p>¿Organizas un evento, quieres ser distribuidor de nuestra salsa o necesitas un pedido corporativo? Agenda una videollamada con nuestro equipo. También realizamos <strong>clases de cocina huasteca en línea</strong> para grupos.</p>
+      <ul class="check-list">
+        <li>{{icon:check}} Cotizaciones para eventos y empresas</li>
+        <li>{{icon:check}} Alta de distribuidores y puntos de venta</li>
+        <li>{{icon:check}} Clases de cocina en vivo</li>
+      </ul>
+    </div>
+    <div class="vc-actions">
+      <a class="btn btn-yellow btn-lg" href="{{site.webconference.booking_url}}" target="_blank" rel="noopener" data-track="webconference" data-platform="agenda">{{icon:clock}} Agendar cita</a>
+      <a class="btn btn-wine" href="{{site.webconference.meet_url}}" target="_blank" rel="noopener" data-track="webconference" data-platform="google_meet">{{icon:video}} Unirse por Google Meet</a>
+      <a class="btn btn-ghost" href="{{site.webconference.zoom_url}}" target="_blank" rel="noopener" data-track="webconference" data-platform="zoom">{{icon:video}} Unirse por Zoom</a>
+    </div>
+  </div>
+</section>
+
+<section class="section container" aria-labelledby="map-title">
+  <h2 class="section-title small" id="map-title">Encuéntranos en Huejutla</h2>
+  <div class="map">
+    <iframe title="Mapa de ubicación de Eke en Huejutla de Reyes, Hidalgo" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-98.4294%2C21.1336%2C-98.4094%2C21.1476&amp;layer=mapnik&amp;marker=21.1406%2C-98.4194"></iframe>
+  </div>
+</section>

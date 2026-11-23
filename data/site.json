@@ -1,0 +1,54 @@
+{
+  "_comentario": "Configuración central del sitio. Los valores marcados con TODO deben reemplazarse antes de entregar.",
+  "name": "Eke Comida Tradicional Huasteca",
+  "short_name": "Eke",
+  "tagline": "Comida Tradicional Huasteca",
+  "default_description": "Compra en línea enchiladas de Huejutla auténticas, paquetes familiares y salsa huasteca hechas en casa por Eke. Envíos a todo México desde Huejutla, Hidalgo.",
+  "site_url": "https://karlaitzelbautistaramirez-maker.github.io",
+  "lang": "es-MX",
+  "locale": "es_MX",
+  "currency": "MXN",
+  "phone": "+52 789 000 0000",
+  "whatsapp": "527890000000",
+  "email": "contacto@eke-huasteca.mx",
+  "address": {
+    "street": "Centro",
+    "city": "Huejutla de Reyes",
+    "region": "Hidalgo",
+    "postal_code": "43000",
+    "country": "MX"
+  },
+  "geo": { "lat": 21.1406, "lng": -98.4194 },
+  "opening_hours": "Lu-Do 08:00-16:00",
+  "social": {
+    "facebook": "https://www.facebook.com/TODO-eke",
+    "instagram": "https://www.instagram.com/TODO-eke",
+    "tiktok": "https://www.tiktok.com/@TODO-eke",
+    "youtube": "https://www.youtube.com/@TODO-eke"
+  },
+  "webconference": {
+    "meet_url": "https://meet.google.com/TODO-xxx-xxxx",
+    "zoom_url": "https://zoom.us/j/TODO",
+    "booking_url": "https://calendar.app.google/TODO"
+  },
+  "analytics": {
+    "ga4_measurement_id": "",
+    "gsc_verification": ""
+  },
+  "forms": {
+    "formspree_id": ""
+  },
+  "video": {
+    "file": "eke-enchiladas-de-huejutla",
+    "youtube_id": "",
+    "title": "Enchiladas de Huejutla: conoce Eke",
+    "description": "Video promocional de Eke: enchiladas de Huejutla con salsa de chile seco, paquete familiar y Salsa Huasteca con envíos a todo México.",
+    "upload_date": "2026-11-20",
+    "duration": "PT2M30S"
+  },
+  "shipping": [
+    { "id": "recoger", "label": "Recoger en tienda (Huejutla)", "cost": 0 },
+    { "id": "local", "label": "Entrega a domicilio en Huejutla", "cost": 35 },
+    { "id": "nacional", "label": "Envío nacional por paquetería (2-4 días)", "cost": 149, "free_from": 800 }
+  ]
+}

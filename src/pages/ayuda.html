@@ -1,0 +1,123 @@
+---
+path: /ayuda/
+title: Mesa de ayuda y preguntas frecuentes
+description: Centro de ayuda de Eke: reporta un incidente con tu pedido, solicita un servicio (factura, cambio de dirección, pedido para evento) y consulta las preguntas frecuentes.
+crumb: Ayuda
+schema: faq
+priority: 0.6
+---
+<section class="section container">
+  <header class="section-head">
+    <h1 class="section-title">Mesa de ayuda</h1>
+    <p class="section-sub">¿Tuviste un problema con tu pedido o necesitas algo especial? Abre un ticket y te atendemos según nuestros niveles de servicio.</p>
+  </header>
+
+  <div class="help-layout">
+    <form class="card ticket-form" id="ticket-form" novalidate>
+      <h2 class="h3">Abrir un ticket</h2>
+      <fieldset class="seg">
+        <legend>Tipo de ticket</legend>
+        <label><input type="radio" name="tipo" value="incidente" checked> <span><strong>Incidente</strong><small>Algo no funcionó: pedido incompleto, retraso, error en el pago o en el sitio.</small></span></label>
+        <label><input type="radio" name="tipo" value="solicitud"> <span><strong>Solicitud de servicio</strong><small>Factura, cambio de dirección, pedido para evento, cancelación.</small></span></label>
+        <label><input type="radio" name="tipo" value="consulta"> <span><strong>Consulta</strong><small>Dudas sobre productos, envíos o ingredientes.</small></span></label>
+      </fieldset>
+      <div class="form-grid">
+        <label>Categoría
+          <select name="categoria" required>
+            <option value="pedido">Pedido / producto</option>
+            <option value="entrega">Entrega y envío</option>
+            <option value="pago">Pago y reembolso</option>
+            <option value="facturacion">Facturación</option>
+            <option value="sitio">Sitio web / cuenta</option>
+            <option value="otro">Otro</option>
+          </select>
+        </label>
+        <label>Número de pedido (opcional)
+          <input name="pedido" placeholder="EKE-…" autocomplete="off">
+        </label>
+        <label>Impacto
+          <select name="impacto" data-priority-input>
+            <option value="bajo">Bajo: me afecta un poco</option>
+            <option value="medio" selected>Medio: afecta mi pedido</option>
+            <option value="alto">Alto: no recibí mi pedido / cobro indebido</option>
+          </select>
+        </label>
+        <label>Urgencia
+          <select name="urgencia" data-priority-input>
+            <option value="baja">Baja: puede esperar</option>
+            <option value="media" selected>Media: hoy mismo</option>
+            <option value="alta">Alta: lo necesito ya</option>
+          </select>
+        </label>
+        <label>Nombre
+          <input name="nombre" required autocomplete="name">
+        </label>
+        <label>Correo electrónico
+          <input name="email" type="email" required autocomplete="email">
+        </label>
+        <label class="full">Asunto
+          <input name="asunto" required maxlength="120">
+        </label>
+        <label class="full">Descripción
+          <textarea name="descripcion" rows="5" required placeholder="Cuéntanos qué pasó, cuándo y cómo podemos ayudarte."></textarea>
+        </label>
+      </div>
+      <p class="priority-box" data-priority-out aria-live="polite"></p>
+      <button class="btn btn-wine btn-lg" type="submit">{{icon:help}} Enviar ticket</button>
+      <p class="form-msg" data-form-msg role="alert"></p>
+    </form>
+
+    <aside class="help-side">
+      <div class="card">
+        <h2 class="h3">Canales de atención</h2>
+        <ul class="contact-list">
+          <li>{{icon:whatsapp}} <a href="https://wa.me/{{site.whatsapp}}" target="_blank" rel="noopener" data-track="whatsapp_click">WhatsApp</a> (respuesta en horario de atención)</li>
+          <li>{{icon:mail}} <a href="mailto:{{site.email}}">{{site.email}}</a></li>
+          <li>{{icon:video}} <a href="{{url:/nosotros/}}#videollamada">Videollamada con el equipo</a></li>
+          <li>{{icon:search}} <a href="{{url:/seguimiento/}}">Consultar un ticket</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2 class="h3">Niveles de servicio (SLA)</h2>
+        <table class="table small">
+          <thead><tr><th scope="col">Prioridad</th><th scope="col">1.ª respuesta</th><th scope="col">Resolución</th></tr></thead>
+          <tbody>
+            <tr><td><span class="pill p1">P1 Crítica</span></td><td>1 h</td><td>4 h</td></tr>
+            <tr><td><span class="pill p2">P2 Alta</span></td><td>2 h</td><td>8 h</td></tr>
+            <tr><td><span class="pill p3">P3 Media</span></td><td>4 h</td><td>24 h</td></tr>
+            <tr><td><span class="pill p4">P4 Baja</span></td><td>8 h</td><td>48 h</td></tr>
+          </tbody>
+        </table>
+        <p class="small">Tiempos en horario de atención (lunes a domingo, 8:00 a 16:00 h). <a href="{{url:/catalogo-de-servicios/}}">Ver catálogo de servicios</a>.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section container narrow" aria-labelledby="faq-title">
+  <h2 class="section-title" id="faq-title">Preguntas frecuentes</h2>
+  <details class="faq">
+    <summary>¿Hacen envíos a todo México?</summary>
+    <div><p>Sí. Las salsas y los paquetes empacados al vacío se envían por paquetería a todo México en 2 a 4 días hábiles. Las enchiladas recién preparadas se entregan a domicilio en Huejutla o puedes recogerlas en tienda.</p></div>
+  </details>
+  <details class="faq">
+    <summary>¿Cuánto cuesta el envío?</summary>
+    <div><p>Recoger en tienda no tiene costo, la entrega a domicilio en Huejutla cuesta $35 MXN y el envío nacional cuesta $149 MXN; es gratis en compras desde $800 MXN.</p></div>
+  </details>
+  <details class="faq">
+    <summary>¿Qué formas de pago aceptan?</summary>
+    <div><p>Tarjeta de crédito o débito (Mercado Pago), PayPal, transferencia SPEI y efectivo al recibir para entregas locales.</p></div>
+  </details>
+  <details class="faq">
+    <summary>¿Puedo pedir para un evento?</summary>
+    <div><p>Sí. Elige el Paquete Fiesta o abre una solicitud de servicio indicando la fecha y el número de personas. Recomendamos pedir con 24 horas de anticipación.</p></div>
+  </details>
+  <details class="faq">
+    <summary>¿Cómo solicito factura?</summary>
+    <div><p>Abre una solicitud de servicio en la categoría Facturación con tu número de pedido, RFC, razón social, régimen fiscal y código postal. La enviamos a tu correo en un máximo de 48 horas.</p></div>
+  </details>
+  <details class="faq">
+    <summary>¿Qué hago si mi pedido llegó incompleto?</summary>
+    <div><p>Abre un incidente con impacto alto e incluye tu número de pedido. Lo atendemos con prioridad y reponemos el producto o hacemos el reembolso correspondiente.</p></div>
+  </details>
+</section>

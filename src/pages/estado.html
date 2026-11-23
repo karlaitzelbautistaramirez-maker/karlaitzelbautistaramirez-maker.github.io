@@ -1,0 +1,46 @@
+---
+path: /estado/
+title: Estado del sitio y métricas de servicio
+description: Disponibilidad, tiempos de respuesta y tasa de errores de la tienda en línea de Eke, medidos por el monitoreo automático.
+crumb: Estado del sitio
+priority: 0.3
+---
+<section class="section container">
+  <header class="section-head">
+    <h1 class="section-title">Estado del sitio</h1>
+    <p class="section-sub">Métricas de disponibilidad y rendimiento (DevOps) de la plataforma.</p>
+  </header>
+
+  <div class="grid three stats" id="status-summary">
+    <div class="card stat"><p class="stat-label">Disponibilidad (monitoreo)</p><p class="stat-value" data-stat="uptime">–</p><p class="stat-note" data-stat-note="uptime">Sin datos del monitoreo todavía</p></div>
+    <div class="card stat"><p class="stat-label">Tiempo de respuesta promedio</p><p class="stat-value" data-stat="avg">–</p><p class="stat-note" data-stat-note="avg">Medido por el monitoreo automático</p></div>
+    <div class="card stat"><p class="stat-label">Tasa de errores HTTP</p><p class="stat-value" data-stat="errors">–</p><p class="stat-note" data-stat-note="errors">Respuestas 4xx/5xx</p></div>
+  </div>
+
+  <div class="card">
+    <h2 class="h3">{{icon:activity}} Prueba en vivo desde tu navegador</h2>
+    <p>Medimos ahora mismo el tiempo de respuesta de los recursos principales del sitio.</p>
+    <div class="table-wrap">
+      <table class="table" id="status-live">
+        <thead><tr><th scope="col">Recurso</th><th scope="col">Estado HTTP</th><th scope="col">Tiempo</th></tr></thead>
+        <tbody><tr><td colspan="3">Ejecutando pruebas…</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 class="h3">Rendimiento de esta visita (Web Vitals)</h2>
+    <div class="table-wrap">
+      <table class="table" id="status-vitals">
+        <thead><tr><th scope="col">Métrica</th><th scope="col">Valor</th><th scope="col">Objetivo</th></tr></thead>
+        <tbody><tr><td colspan="3">Calculando…</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 class="h3">Historial del monitoreo automático</h2>
+    <p class="small">El flujo de GitHub Actions <code>monitor.yml</code> revisa el sitio periódicamente y guarda los resultados en <code>monitoring/metrics.csv</code>.</p>
+    <div class="table-wrap"><table class="table small" id="status-history"><tbody><tr><td>Sin datos todavía.</td></tr></tbody></table></div>
+  </div>
+</section>

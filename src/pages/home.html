@@ -1,0 +1,103 @@
+---
+path: /
+title: Enchiladas de Huejutla en línea | Eke Comida Huasteca
+description: Compra enchiladas de Huejutla auténticas, paquetes familiares y salsa huasteca hechas en casa por Eke. Pide en línea con envíos a todo México.
+schema: home
+priority: 1.0
+changefreq: weekly
+class: page-home
+images: hero-enchiladas-de-huejutla,desde-huejutla-hidalgo-catedral
+---
+<section class="hero" aria-label="Presentación">
+  <div class="hero-media">
+    <img src="{{url:/assets/img/hero-enchiladas-de-huejutla.webp}}" srcset="{{url:/assets/img/hero-enchiladas-de-huejutla-640w.webp}} 640w, {{url:/assets/img/hero-enchiladas-de-huejutla.webp}} 1016w" sizes="(max-width: 800px) 100vw, 66vw" alt="Plato de barro con enchiladas de Huejutla bañadas en salsa roja, cubiertas de queso fresco, lechuga y cebolla, junto a un pizarrón que dice Especialidad de la casa" title="Enchiladas de Huejutla, especialidad de la casa Eke" width="1016" height="390" fetchpriority="high" decoding="async">
+  </div>
+  <div class="container hero-in">
+   <div class="hero-left">
+    <div class="hero-slides" data-carousel>
+      <div class="hero-copy is-active" data-slide>
+        <h1 class="hero-title"><span>Enchiladas de</span> <span class="script">Huejutla</span></h1>
+        <p class="hero-sub">El sabor auténtico de la Huasteca Hidalguense, hecho en casa por Eke.</p>
+      </div>
+      <div class="hero-copy" data-slide aria-hidden="true">
+        <p class="hero-title"><span>Paquete</span> <span class="script">Familiar</span></p>
+        <p class="hero-sub">12 enchiladas con salsa extra y complementos para compartir en casa.</p>
+      </div>
+      <div class="hero-copy" data-slide aria-hidden="true">
+        <p class="hero-title"><span>Salsa</span> <span class="script">Huasteca</span></p>
+        <p class="hero-sub">Nuestra salsa de chile seco tostado, ahora en frasco y con envío a todo México.</p>
+      </div>
+    </div>
+    <ul class="hero-feats">
+      <li>{{icon:leaf icon icon-xl}}<span>Receta<br>tradicional</span></li>
+      <li>{{icon:pin icon icon-xl}}<span>Origen:<br>Huejutla, Hgo.</span></li>
+      <li>{{icon:heart icon icon-xl}}<span>Hechas<br>con pasión</span></li>
+    </ul>
+    <a class="btn btn-yellow btn-lg hero-cta" href="{{url:/menu/}}" data-track="hero_cta">{{icon:cart icon icon-lg}} Ordena en línea</a>
+   </div>
+    <div class="dots" role="tablist" aria-label="Mensajes destacados">
+      <button role="tab" aria-selected="true" aria-label="Mensaje 1" data-dot="0"></button>
+      <button role="tab" aria-selected="false" aria-label="Mensaje 2" data-dot="1"></button>
+      <button role="tab" aria-selected="false" aria-label="Mensaje 3" data-dot="2"></button>
+    </div>
+  </div>
+</section>
+
+<section class="section container" aria-labelledby="productos-title">
+  <header class="section-head">
+    <h2 class="section-title deco" id="productos-title">Nuestros Productos</h2>
+    <p class="section-sub">Enchiladas, paquetes y más del sabor huasteco</p>
+  </header>
+  <div class="products-layout">
+    {{block:featured_products}}
+    <aside class="promo-huejutla">
+      <a href="{{url:/tradicion-de-huejutla/}}">
+        {{img:desde-huejutla-hidalgo-catedral|Catedral de Huejutla, Hidalgo, rodeada de vegetación con el texto Desde Huejutla, Hidalgo|289|230}}
+        <p>Llevamos a tu mesa<br>el sabor de nuestra tierra.</p>
+      </a>
+    </aside>
+  </div>
+  <p class="center"><a class="btn btn-ghost" href="{{url:/menu/}}">Ver todo el menú</a></p>
+</section>
+
+<section class="benefits" aria-label="Por qué comprar en Eke">
+  <ul class="container benefits-in">
+    <li>{{icon:leaf icon icon-xl}}<div><h3>Hecho el mismo día</h3><p>Tortilla, salsa y queso frescos en cada pedido.</p></div></li>
+    <li>{{icon:truck icon icon-xl}}<div><h3>Envíos a todo México</h3><p>Entrega local en Huejutla y paquetería nacional.</p></div></li>
+    <li>{{icon:shield icon icon-xl}}<div><h3>Pago seguro</h3><p>Tarjeta, PayPal, transferencia SPEI o efectivo.</p></div></li>
+    <li>{{icon:whatsapp icon icon-xl}}<div><h3>Atención directa</h3><p>Mesa de ayuda y WhatsApp para resolver tus dudas.</p></div></li>
+  </ul>
+</section>
+
+<section class="section container split" aria-labelledby="tradicion-title">
+  <div>
+    <p class="eyebrow">Tradición de Huejutla</p>
+    <h2 class="section-title left" id="tradicion-title">Una receta que viaja desde la Huasteca</h2>
+    <p>Las enchiladas de Huejutla se distinguen por su salsa de chile seco tostado en comal, la tortilla de maíz recién hecha y el queso fresco de rancho. En Eke las preparamos como en los mercados de Huejutla de Reyes, y ahora puedes pedirlas desde cualquier parte de México.</p>
+    <p><a class="btn btn-wine" href="{{url:/tradicion-de-huejutla/}}">Conoce nuestra historia</a></p>
+  </div>
+  {{block:video}}
+</section>
+
+<section class="section container" aria-labelledby="blog-title">
+  <header class="section-head">
+    <h2 class="section-title deco" id="blog-title">Del blog de Eke</h2>
+    <p class="section-sub">Recetas, historia y tradiciones de la Huasteca</p>
+  </header>
+  {{block:latest_posts}}
+</section>
+
+<section class="newsletter" aria-labelledby="news-title">
+  <div class="container newsletter-in">
+    <div>
+      <h2 id="news-title">Recibe promociones y nuevos paquetes</h2>
+      <p>Suscríbete a nuestro boletín por correo. Un correo al mes, sin spam.</p>
+    </div>
+    <form class="newsletter-form" data-newsletter>
+      <label class="sr-only" for="news-email">Correo electrónico</label>
+      <input id="news-email" type="email" name="email" required placeholder="tu@correo.com" autocomplete="email">
+      <button class="btn btn-yellow" type="submit">Suscribirme</button>
+      <p class="form-note">Al suscribirte aceptas nuestro <a href="{{url:/aviso-de-privacidad/}}">aviso de privacidad</a>.</p>
+    </form>
+  </div>
+</section>

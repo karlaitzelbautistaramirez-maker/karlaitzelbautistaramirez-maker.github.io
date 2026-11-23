@@ -1,0 +1,43 @@
+# Integración continua: se ejecuta en cada push a ramas de trabajo y en cada Pull Request.
+name: CI - build y pruebas
+
+on:
+  push:
+    branches: [develop, "feature/**", "hotfix/**"]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generar sitio (SSG)
+        run: python scripts/build.py
+      - name: Pruebas SEO, imágenes, enlaces y sitemap
+        run: python scripts/test_site.py
+      - name: Guardar el sitio generado como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitio-dist
+          path: dist
+          retention-days: 7
+
+  lighthouse:
+    needs: build-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/build.py
+      - name: Auditoría Lighthouse (rendimiento, accesibilidad, SEO)
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          configPath: ./lighthouserc.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true

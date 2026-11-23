@@ -1,0 +1,35 @@
+name: Incidente (ITIL)
+description: Algo dejó de funcionar en la plataforma (sitio caído, error de pago, página rota).
+title: "[INC] "
+labels: ["incidente"]
+body:
+  - type: input
+    id: ticket
+    attributes:
+      label: Folio de la mesa de ayuda (si aplica)
+      placeholder: TCK-12345
+  - type: dropdown
+    id: impacto
+    attributes:
+      label: Impacto
+      options: ["Alto - afecta a todos los clientes o a los pagos", "Medio - afecta una función", "Bajo - afecta a pocos usuarios"]
+    validations:
+      required: true
+  - type: dropdown
+    id: urgencia
+    attributes:
+      label: Urgencia
+      options: ["Alta", "Media", "Baja"]
+    validations:
+      required: true
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción y pasos para reproducir
+      placeholder: "1. Entrar a ... 2. Dar clic en ... 3. Aparece el error ..."
+    validations:
+      required: true
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidencia (capturas, URL, navegador)

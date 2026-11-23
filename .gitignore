@@ -1,0 +1,16 @@
+# Sitio generado (lo produce el pipeline)
+dist/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Lighthouse CI
+.lighthouseci/
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.env
