@@ -38,7 +38,7 @@ Publicado en `/catalogo-de-servicios/`.
 | Pedidos para eventos | Más de 6 personas o empresas | Mesa de ayuda, videollamada | 8:00 a 16:00 h | Cotización en ≤ 4 h |
 | Facturación | CFDI | Mesa de ayuda | Lunes a viernes | ≤ 48 h |
 | Atención a incidentes | Problemas con pedidos, pagos o el sitio | Mesa de ayuda, WhatsApp, correo | 8:00 a 16:00 h | Según prioridad |
-| Clases en línea | Talleres por videoconferencia | Meet / Zoom | Con cita | Confirmación en ≤ 24 h |
+| Clases en línea | Talleres por videoconferencia | Google Meet | Con cita | Confirmación en ≤ 24 h |
 | Boletín | Promociones mensuales | Correo | Mensual | Baja inmediata |
 
 ### Gestión de la capacidad y la disponibilidad
