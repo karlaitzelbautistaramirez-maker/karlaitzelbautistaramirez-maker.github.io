@@ -1,1 +1,7 @@
 timestamp_utc,path,status,response_ms,ok
+2026-11-26 20:25,/,200,132,1
+2026-11-26 20:25,/menu/,200,120,1
+2026-11-26 20:25,/producto/paquete-familiar-eke/,200,116,1
+2026-11-26 20:25,/ayuda/,200,123,1
+2026-11-26 20:25,/sitemap.xml,200,142,1
+2026-11-26 20:25,/robots.txt,200,110,1
