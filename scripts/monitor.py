@@ -38,13 +38,16 @@ def check(url: str) -> tuple[int, int]:
             status = r.status
     except urllib.error.HTTPError as e:
         status = e.code
-    except Exception:
+    except Exception as e:  # sin respuesta: DNS, tiempo de espera, URL mal formada...
+        print(f"      sin respuesta de {url!r}: {type(e).__name__}: {e}")
         status = 0
     return status, round((time.perf_counter() - start) * 1000)
 
 
 def main() -> int:
-    base = os.environ.get("SITE_URL", "").rstrip("/")
+    # strip(): una variable SITE_URL pegada con un espacio o salto de línea al final
+    # generaba URLs inválidas y todas las comprobaciones salían con estado 0.
+    base = os.environ.get("SITE_URL", "").strip().rstrip("/")
     if not base:
         print("Define la variable SITE_URL, p. ej. https://usuario.github.io")
         return 2
